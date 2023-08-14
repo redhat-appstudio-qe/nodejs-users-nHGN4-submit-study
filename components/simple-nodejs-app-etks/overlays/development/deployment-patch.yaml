@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-etks
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-itsa-tenant/nodejs-users/simple-nodejs-app-etks@sha256:dd3a9c77d46f6ba3615742630c3cd9817a22e8a140e0a281d5bc2ea58a5bef71
+        name: my-nodejs
+        resources: {}
+status: {}
