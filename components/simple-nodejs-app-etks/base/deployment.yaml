@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: simple-nodejs-app-etks
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-itsa-tenant/nodejs-users/simple-nodejs-app-etks@sha256:dd3a9c77d46f6ba3615742630c3cd9817a22e8a140e0a281d5bc2ea58a5bef71
         name: my-nodejs
         ports:
         - containerPort: 3001
